@@ -2,4 +2,55 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+
+}
+
+.header {
+
+}
+
+.decorated-zone {
+
+}
+
+.decoration-title {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: var(--decor-color);
+
+}
+
+.header__theme-menu {
+
+}
+
+.header__theme-menu-list {
+
+}
+
+.header__theme-menu-item {
+
+}
+
+.header__theme-menu-button {
+
+}
+
+.header__theme-menu-button_type_light {
+
+}
+
+.header__theme-menu-button_active {
+
+}
+
+.header__theme-menu-button_type_auto {
+
+}
+
+.header__theme-menu-button_type_dark {
+  
 }
