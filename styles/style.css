@@ -2,10 +2,22 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: var(--font-family), sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  background-image: var(--background-image) no-repeat top center;
+  background-size: auto 375px;
+  background-attachment: fixed;
+  margin: auto;
 
 }
 
 .header {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+
+
 
 }
 
@@ -20,15 +32,33 @@
   line-height: 25px;
   text-transform: uppercase;
   color: var(--decor-color);
-
+  top: 21px;
+  right: 49px;
 }
 
-.header__theme-menu {
+.decoration-title::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--decor-color);
+  border-block-start: 1px solid var(--decor-color);
+  border-inline-end: 1px solid var(--decor-color);
+}
 
+
+.header__theme-menu {
+  margin-top: 39px;
+  margin-right: 10px;
 }
 
 .header__theme-menu-list {
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 11.5px;
+  list-style-type: none;
 }
 
 .header__theme-menu-item {
@@ -36,7 +66,27 @@
 }
 
 .header__theme-menu-button {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  text-transform: lowercase;
+  color: var(--decor-color);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
 
+.header__theme-menu-button:hover {
+  border: 1px solid var(--border-color);
+}
+
+.header__theme-menu-button:focus {
+  border: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--border-color);
 }
 
 .header__theme-menu-button_type_light {
@@ -44,7 +94,7 @@
 }
 
 .header__theme-menu-button_active {
-
+  border: 1px solid var(--border-color);
 }
 
 .header__theme-menu-button_type_auto {
