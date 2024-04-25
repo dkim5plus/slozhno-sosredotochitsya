@@ -11,6 +11,8 @@
   margin: auto;
 }
 
+/* ШАПКА */
+
 .header {
   position: relative;
   display: grid;
@@ -23,7 +25,7 @@
   block-size: 25px;
   inline-size: 25px;
   inset-block-start: 10px;
-  inset-inline-end: 10px;
+  inset-inline-end: 11px;
   border-block-start: 1px solid var(--border-color);
   border-inline-end: 1px solid var(--border-color);
 }
@@ -34,7 +36,7 @@
   block-size: 25px;
   inline-size: 25px;
   inset-block-end: 10px;
-  inset-inline-start: 10px;
+  inset-inline-start: 11px;
   border-block-end: 1px solid var(--border-color);
   border-inline-start: 1px solid var(--border-color);
 
@@ -46,9 +48,9 @@
   text-transform: uppercase;
   color: var(--decor-color);
   block-size: 26px;
-  inline-size: 33px;
-  inset-block-start: 10px;
-  inset-inline-end: 38px;
+  inline-size: 52px;
+  inset-block-start: 15px;
+  inset-inline-end: 21px;
 }
 
 .decoration-title::after {
@@ -59,18 +61,18 @@
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--decor-color);
   background-color: var(--decor-color);
+  margin: 3px 0px 9px 10px;
 }
 
 
 .header__theme-menu {
-  margin-top: 39px;
-  margin-right: 10px;
+  padding-top: 20px;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  justify-content: center;
   gap: 11.5px;
   list-style-type: none;
 }
@@ -117,4 +119,43 @@
 
 .header__theme-menu-button_type_dark {
   
+}
+
+.header__title-cont {
+}
+.header__title {
+}
+.header__subtitle {
+}
+.main {
+}
+.section {
+}
+.why-cont {
+}
+.section-title {
+}
+.section-list {
+}
+.section-item {
+}
+.section-subtitle {
+}
+.section-text {
+}
+.section-text-link {
+}
+.what-cont {
+}
+.how-cont {
+}
+.how-decor {
+}
+.image-cont {
+}
+.image {
+}
+.footer {
+}
+.footer-title {
 }
