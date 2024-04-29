@@ -2,21 +2,20 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  font-family: var(--font-family), sans-serif;
   color: var(--text-color);
   background-color: var(--background-color);
   background-image: var(--background-image) no-repeat top center;
   background-size: auto 375px;
   background-attachment: fixed;
   margin: auto;
+  padding: 10px;
+  font-family: "IBM Plex mono";
 }
 
 /* ШАПКА */
 
 .header {
   position: relative;
-  display: grid;
-  grid-template-rows: 1fr min-content 1fr;
 }
 
 .decorated-zone::before {
@@ -24,8 +23,8 @@
   content: '';
   block-size: 25px;
   inline-size: 25px;
-  inset-block-start: 10px;
-  inset-inline-end: 11px;
+  inset-block-start: 0px;
+  inset-inline-end: 0px;
   border-block-start: 1px solid var(--border-color);
   border-inline-end: 1px solid var(--border-color);
 }
@@ -35,8 +34,8 @@
   content: '';
   block-size: 25px;
   inline-size: 25px;
-  inset-block-end: 10px;
-  inset-inline-start: 11px;
+  inset-block-end: 0px;
+  inset-inline-start: 0px;
   border-block-end: 1px solid var(--border-color);
   border-inline-start: 1px solid var(--border-color);
 
@@ -49,8 +48,9 @@
   color: var(--decor-color);
   block-size: 26px;
   inline-size: 52px;
-  inset-block-start: 15px;
-  inset-inline-end: 21px;
+  inset-block-start: 1px;
+  inset-inline-end: 9px;
+  font-size: 18px;
 }
 
 .decoration-title::after {
@@ -61,27 +61,26 @@
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--decor-color);
   background-color: var(--decor-color);
-  margin: 3px 0px 9px 10px;
+  margin: 7px 0px 9px 10px;
 }
 
 
 .header__theme-menu {
-  padding-top: 20px;
+  padding-top: 49px;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
+  align-items: end;
   justify-content: center;
-  gap: 11.5px;
+  gap: 11px;
   list-style-type: none;
 }
 
-.header__theme-menu-item {
-
-}
-
 .header__theme-menu-button {
+  block-size: 26px;
+  inline-size: 70px;
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
@@ -105,30 +104,41 @@
   border-bottom: 1px solid var(--border-color);
 }
 
-.header__theme-menu-button_type_light {
-
-}
-
 .header__theme-menu-button_active {
   border: 1px solid var(--border-color);
 }
 
-.header__theme-menu-button_type_auto {
-
-}
-
-.header__theme-menu-button_type_dark {
-  
-}
-
 .header__title-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  padding: 47px 0 56px;
 }
+
 .header__title {
+  color: var(--title-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 95.7px;
+  text-shadow: 4px 4px 0 var(--decor-color);
+  margin: 0;
 }
+
 .header__subtitle {
+  background-color: var(--decor-color);
+  color: var(--art-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+  margin: 0;
+
 }
+
 .main {
+
 }
+
 .section {
 }
 .why-cont {
