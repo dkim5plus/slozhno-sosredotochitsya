@@ -12,8 +12,6 @@
   font-family: "IBM Plex mono";
 }
 
-/* ШАПКА */
-
 .header {
   position: relative;
 }
@@ -86,7 +84,7 @@
   line-height: 18px;
   text-align: center;
   text-transform: lowercase;
-  color: var(--decor-color);
+  color: var(--main-text-color);
   border: none;
   background: none;
   cursor: pointer;
@@ -136,36 +134,79 @@
 }
 
 .main {
-
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  flex: 1 1 auto;
 }
 
 .section {
+  line-height: 23.4px;
 }
-.why-cont {
-}
+
+
 .section-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-block-end: 20px;
+  color: var(--decor-color);
 }
-.section-list {
-}
-.section-item {
-}
+
 .section-subtitle {
+  color: var(--art-color);
+  background-color: var(--decor-color);
 }
+
 .section-text {
+  font-size: 18px;
+  font-weight: 400;
 }
+
 .section-text-link {
+  border: transparent;
+  text-shadow: 3px 3px 0px var(--decor-color);
+  text-decoration: none;
 }
-.what-cont {
+
+.section-text-link:hover {
+  border-bottom: 1px solid var(--main-text-color);
 }
-.how-cont {
+
+.section-text-link:focus {
+  outline: none;
 }
+
+.section-text-link:focus-visible {
+  outline: 1px solid var(--main-text-color);
+}
+  
 .how-decor {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
 }
+
 .image-cont {
+  gap: 10px;
 }
 .image {
+  object-fit: cover;
+  inline-size: 100%;
 }
+
 .footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 668px;
+  block-size: 100vh;
 }
+
 .footer-title {
+  color: var(--title-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 95.7px;
+  text-shadow: 4px 4px 0 var(--decor-color);
 }
