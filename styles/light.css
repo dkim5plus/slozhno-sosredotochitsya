@@ -9,18 +9,46 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --decor-color: #FF8DCB;
+  --main-text-color: #353430;
+  --text-color: #353430;
+  --background-color: #FFF;
+  --background-image: url(../images/cover-image-light.png);
+  --border-color: #353430;
+  --title-color: #FFC2E6;
+  --art-color: #353430;  
 }
 
 :root.theme-light {
-  /* Переменные светлой темы */    
+  /* Переменные светлой темы */
+  --decor-color: #FF8DCB;
+  --main-text-color: #353430;
+  --text-color: #353430;
+  --background-color: #FFF;
+  --background-image: url(../images/cover-image-light.png);
+  --border-color: #353430;
+  --title-color: #FFC2E6;
+  --art-color: #353430;  
 }
 
 /* Остальные стили */
 
 @media (prefers-color-scheme: light) {
 :root {
-      /* Дублируем переменные светлой темы */    
+      /* Дублируем переменные светлой темы */
+    --decor-color: #FF8DCB;
+    --main-text-color: #353430;
+    --text-color: #353430;
+    --background-color: #FFF;
+    --background-image: url(../images/cover-image-light.png);
+    --border-color: #353430;
+    --title-color: #FFC2E6;
+    --art-color: #353430;  
   }
 }
 
 /* Остальные стили */
+
+.page.theme_light .decoration-title {
+  display: none;
+}

@@ -188,6 +188,8 @@
 }
 
 .image-cont {
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 .image {
@@ -200,8 +202,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 668px;
-  block-size: 100vh;
+  min-block-size: 100vh;
 }
 
 .footer-title {
