@@ -145,7 +145,6 @@
   line-height: 23.4px;
 }
 
-
 .section-title {
   font-size: 18px;
   font-weight: 700;
@@ -161,6 +160,7 @@
 .section-text {
   font-size: 18px;
   font-weight: 400;
+  margin-top: -7px;
 }
 
 .section-text-link {
@@ -202,7 +202,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-block-size: 100vh;
+  min-block-size: 96vh;
 }
 
 .footer-title {
@@ -210,4 +210,44 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 95.7px;
   text-shadow: 4px 4px 0 var(--decor-color);
+}
+
+@media (width >= 768px) {
+  .page {
+    padding: 20px;
+  }
+
+  .header__theme-menu {
+    padding-top: 156px;
+  }
+
+  .header__title-cont {
+    padding: 156px 0 166px;
+    gap: 162px
+  }
+
+  .header__title {
+    transform: translateX(-20px);
+  }
+
+  .header__subtitle {
+    max-inline-size: 364px;
+    margin-inline-start: 374px;
+  }
+
+  .main {
+    margin: 60px 0;
+    gap: 80px;
+  
+  }
+
+  .why-cont {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .why-content {
+    max-inline-size: 472px;
+  }
 }
