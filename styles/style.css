@@ -241,7 +241,7 @@
   
   }
 
-  .why-cont {
+  .columns-cont {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -249,5 +249,39 @@
 
   .why-content {
     max-inline-size: 472px;
+  }
+
+  .sunset {
+    grid-area: ss;
+  }
+
+  .icecream {
+    grid-area: ic;
+  }
+  .casset {
+    grid-area: ct;
+  }
+  .book {
+    grid-area: bk;
+  }
+  .street {
+    grid-area: st;
+  }
+
+  .image {
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    display: block;
+  }
+
+  .image-cont {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "ss ss ic"
+      "ct bk ic"
+      "ct st st";
   }
 }
