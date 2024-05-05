@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light">
     <title>Сложно сосредоточиться</title>
-    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <span class="decoration-title">rec</span>
+      <span class="decoration-title" aria-hidden="true">rec</span>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -45,11 +47,15 @@
       </nav>
       <div class="header__title-cont">
         <h1 class="header__title">no focus</h1>
-        <p class="header__subtitle">
-          Что делать, когда не можешь делать ничего<br />
-          Или почему нам так сложно сконцентрироваться, особенно когда очень
-          надо
-        </p>
+        <div class="header__subtitle">
+          <p>
+            Что делать, когда не можешь делать ничего
+          </p>
+          <p>
+            или почему нам так сложно сконцентрироваться, особенно когда очень
+            надо
+          </p>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -125,16 +131,14 @@
         </div>
       </section>
       <section class="section columns-cont">
+        <h2 class="section-title">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h2>
         <div>
-          <h2 class="section-title">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h2>
-        </div>
-        <div>
-          <h2 class="section-subtitle">5 простых (на самом деле не очень) советов</h2>
+          <h3 class="section-subtitle">5 простых (на самом деле не очень) советов</h3>
           <div class="section-list columns-content">
             <article class="section-item">
-              <h3 class="section-subtitle how-decor">
+              <h4 class="section-subtitle how-decor">
                 Представьте небо и облака
-              </h3>
+              </h4>
               <p class="section-text">
                 Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
                 успокоиться. Ведь часто именно тревожные мысли о сложных задачах
@@ -147,9 +151,9 @@
               </p>
             </article>
             <article class="section-item">
-              <h3 class="section-subtitle how-decor">
+              <h4 class="section-subtitle how-decor">
                 Включите музыку
-              </h3>
+              </h4>
                 <p class="section-text">
                   Но не любую, и не любимую. Любимая может быть связана с сильными 
                   положительными эмоциями, которые тоже очень сильно отвлекают. 
@@ -158,21 +162,25 @@
                 </p>
             </article>
             <article class="section-item">
-              <h3 class="section-subtitle how-decor">
+              <h4 class="section-subtitle how-decor">
                 Прогуляйтесь
-              </h3>
+              </h4>
                 <p class="section-text">
-                  Или даже пробегитесь. Лучше найти парк или лес: один эксперимент показал, 
-                  что созерцание природы повышает концентрацию, в то время как после просмотра 
+                  Или даже пробегитесь. Лучше найти парк или лес: один эксперимент <a
+                  href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
+                  target="_blank"
+                  class="section-text-link"
+                  >показал</a
+                  >, что созерцание природы повышает концентрацию, в то время как после просмотра 
                   городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими 
                   упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. 
                   Но и простая двадцатиминутная прогулка — тоже отличный вариант.
                 </p>
             </article>
             <article class="section-item">
-              <h3 class="section-subtitle how-decor">
+              <h4 class="section-subtitle how-decor">
                 Хорошо ешьте
-              </h3>
+              </h4>
                 <p class="section-text">
                   Мы — не ваша бабушка, но это правда важно. Выбирайте продукты, которые препятствуют резким скачкам сахара в крови. 
                   Например, с высоким содержанием клетчатки: 
@@ -180,9 +188,9 @@
                 </p>
             </article>
             <article class="section-item">
-              <h3 class="section-subtitle how-decor">
+              <h4 class="section-subtitle how-decor">
                 Читайте
-              </h3>
+              </h4>
                 <p class="section-text">
                   Настоящие бумажные книги. Это правда помогает с концентрацией: 
                   чтобы прочитать пост в соцсети, достаточно нескольких минут или даже секунд. 
@@ -197,31 +205,31 @@
         <div class="image-wall">
           <img
             src="./images/sunset.png"
-            alt="Закат"
+            alt="Изображение заката на фоне гор"
             loading="lazy"
             class="image sunset"
           />
           <img
             src="./images/ice-cream.png"
-            alt="Мороженное"
+            alt="Мультяшные шарики мороженного"
             loading="lazy"
             class="image icecream"
           />
           <img
             src="./images/tape.png"
-            alt="Кассета"
+            alt="Тзображение ретро-кассеты"
             loading="lazy"
             class="image casset"
           />
           <img
             src="./images/books.png"
-            alt="Книги"
+            alt="Стопка книг с чашкей на вершине"
             loading="lazy"
             class="image book"
           />
           <img
             src="./images/street.png"
-            alt="Улица"
+            alt="Узкий переулок в городе"
             loading="lazy"
             class="image street"
           />

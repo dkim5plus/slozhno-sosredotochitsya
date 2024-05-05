@@ -19,23 +19,13 @@
   --art-color: #353430;  
 }
 
-:root.theme-light {
-  /* Переменные светлой темы */
-  --decor-color: #FF8DCB;
-  --main-text-color: #353430;
-  --text-color: #353430;
-  --background-color: #FFF;
-  --background-image: url(../images/cover-image-light.png);
-  --border-color: #353430;
-  --title-color: #FFC2E6;
-  --art-color: #353430;  
-}
+
 
 /* Остальные стили */
 
 @media (prefers-color-scheme: light) {
-:root {
-      /* Дублируем переменные светлой темы */
+  :root.theme-light {
+    /* Переменные светлой темы */
     --decor-color: #FF8DCB;
     --main-text-color: #353430;
     --text-color: #353430;
@@ -44,6 +34,10 @@
     --border-color: #353430;
     --title-color: #FFC2E6;
     --art-color: #353430;  
+  }
+
+  .decoration-title {
+    display: none;
   }
 }
 
