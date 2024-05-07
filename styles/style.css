@@ -95,7 +95,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgba(50, 49, 45, 0.4);
+  border: 1px solid var(--hover-color);
 }
 
 .header__theme-menu-button:focus {
@@ -206,7 +206,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-block-start: -10px;
 }
 
 .image-wall {
@@ -238,7 +237,15 @@
 }
 
 @media (width >= 768px) {
-  .header, .main, .footer {
+  .header {
+    padding: 20px;
+  }
+
+  .main {
+    padding: 20px;
+  }
+
+  .footer {
     padding: 20px;
   }
 
@@ -297,13 +304,8 @@
 
   .image-cont {
     gap: 20px;
-    margin-block-start: 0;
   }
   
-  .image-wall {
-    gap: 20px;
-  }
-
   .sunset {
     grid-area: sunset;
   }

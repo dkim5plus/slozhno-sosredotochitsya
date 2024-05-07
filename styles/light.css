@@ -17,7 +17,8 @@
   --background-image: url(../images/cover-image-light.png);
   --border-color: #353430;
   --title-color: #FFC2E6;
-  --art-color: #353430;  
+  --art-color: #353430;
+  --hover-color: rgba(255, 0, 112, 0.4);
 }
 
 
@@ -25,7 +26,7 @@
 /* Остальные стили */
 
 @media (prefers-color-scheme: light) {
-  :root.theme-light {
+  :root {
     /* Переменные светлой темы */
     --decor-color: #FF8DCB;
     --section__title-color: #353430;
@@ -36,6 +37,7 @@
     --border-color: #353430;
     --title-color: #FFC2E6;
     --art-color: #353430;  
+    --hover-color: rgba(255, 0, 112, 0.4);
   }
 
   .decoration-title {
