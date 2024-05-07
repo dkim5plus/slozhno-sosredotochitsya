@@ -10,6 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --decor-color: #FF8DCB;
+  --section__title-color: #353430;
   --main-text-color: #353430;
   --text-color: #353430;
   --background-color: #FFF;
@@ -27,6 +28,7 @@
   :root.theme-light {
     /* Переменные светлой темы */
     --decor-color: #FF8DCB;
+    --section__title-color: #353430;
     --main-text-color: #353430;
     --text-color: #353430;
     --background-color: #FFF;

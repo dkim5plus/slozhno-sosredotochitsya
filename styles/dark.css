@@ -10,6 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --decor-color: #FF0070;
+  --section__title-color: #FF0070;
   --main-text-color: #FF0070;
   --text-color: #F1B2CE;
   --background-color: #000028;
@@ -22,6 +23,7 @@
 :root.theme-dark {
   /* Дублируем переменные для тёмной темы */
   --decor-color: #FF0070;
+  --section__title-color: #FF0070;
   --main-text-color: #FF0070;
   --text-color: #F1B2CE;
   --background-color: #000028;
